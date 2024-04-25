@@ -10,6 +10,38 @@ body {
   font-family: var(--default-font);
 }
 
+logo {
+  max-height: 40px;
+}
+
+nav {
+  padding: 20px 0;
+}
+
+nav ul {
+  padding: 0;
+}
+
+nav li {
+  display: inline;
+  margin-left: 20px;
+  line-height: 24px;
+}
+
+nav a {
+  color: var(--primary-color);
+  text-decoration: none;
+  transition: all 100ms ease-in-out;
+}
+
+nav a:hover {
+  color: var(--branding-color);
+}
+
+nav li.active a {
+  color: var(--branding-color);
+}
+
 h1,
 h2,
 h3,
@@ -133,6 +165,9 @@ h2 {
     font-size: 44px;
   }
 
+  .hero {
+    padding: 0;
+  }
   .content-container h1 {
     font-size: 44px;
   }
@@ -140,6 +175,14 @@ h2 {
   .content-container {
     text-align: center;
     padding: 0;
+  }
+
+  nav li {
+    text-align: center;
+  }
+
+  nav a {
+    font-size: 12px;
   }
 
   .project-description {
