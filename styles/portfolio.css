@@ -56,17 +56,21 @@ h2 {
   line-height: 36px;
   font-family: var(--default-font);
 }
-
-.about-hero {
-  padding: 160px 100px;
+.container {
+  padding: 10px;
 }
 
-.about-hero h1 {
+.content-container {
+  padding: 160px 20px;
+}
+
+.content-container h1 {
   font-size: 64px;
   line-height: 80px;
+  color: rgb(0 0 0);
 }
 
-.about-hero h2 {
+.content-container h2 {
   font-size: 18px;
   font-family: var(--default-font);
   color: var(--primary-color);
@@ -74,14 +78,26 @@ h2 {
   line-height: 27px;
 }
 
-.about-hero p {
+.content-container p {
   font-size: 16px;
-  line-height: 30px;
+  line-height: 24px;
   font-weight: 400;
 }
 
-.about-content {
-  margin: 25px;
+.content {
+  margin: 30px;
+}
+
+.content h3 {
+  font-size: 24px;
+  line-height: 36px;
+  font-family: var(--default-font);
+  font-weight: 700;
+}
+
+.content p {
+  font-size: 14px;
+  line-height: 21px;
 }
 
 .btn-branding {
@@ -92,9 +108,6 @@ h2 {
   padding: 12px 25px;
 }
 
-.container {
-  padding: 10px;
-}
 .project-description {
   padding: 120px 60px;
 }
@@ -120,11 +133,11 @@ h2 {
     font-size: 44px;
   }
 
-  .about-hero h1 {
+  .content-container h1 {
     font-size: 44px;
   }
 
-  .about-hero {
+  .content-container {
     text-align: center;
     padding: 0;
   }
