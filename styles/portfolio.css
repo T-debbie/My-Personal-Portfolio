@@ -1,5 +1,6 @@
 :root {
   --branding-color: #6c63ff;
+  --primary-color: #272142;
   --secondary-color: #f9f7fe;
   --default-font: "Poppins", sans-serif;
   --heading-font: "Playfair Display", serif;
@@ -21,7 +22,7 @@ p {
   font-weight: 400;
   font-size: 18px;
   line-height: 27px;
-  color: #272142b2;
+  color: var(--primary-colour);
 }
 
 h1 {
@@ -44,17 +45,43 @@ h2 {
 .hero p {
   margin: 0;
   font-size: 36px;
-  color: #272142;
   line-height: 54px;
   font-weight: 700;
 }
 
 .hero h2 {
   font-size: 24px;
-  color: #272142;
+  color: var(--primary-color);
   font-weight: 400;
   line-height: 36px;
   font-family: var(--default-font);
+}
+
+.about-hero {
+  padding: 160px 100px;
+}
+
+.about-hero h1 {
+  font-size: 64px;
+  line-height: 80px;
+}
+
+.about-hero h2 {
+  font-size: 18px;
+  font-family: var(--default-font);
+  color: var(--primary-color);
+  font-weight: 700;
+  line-height: 27px;
+}
+
+.about-hero p {
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 400;
+}
+
+.about-content {
+  margin: 25px;
 }
 
 .btn-branding {
@@ -92,6 +119,16 @@ h2 {
   h2 {
     font-size: 44px;
   }
+
+  .about-hero h1 {
+    font-size: 44px;
+  }
+
+  .about-hero {
+    text-align: center;
+    padding: 0;
+  }
+
   .project-description {
     text-align: center;
     padding: 0;
