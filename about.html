@@ -34,19 +34,28 @@
     ></script>
   </head>
   <body>
-    <div class="container">
-      <nav class="d-flex justify-content-between">
-        <a href="/"> Deborah Soetan </a>
-        <ul>
-          <li><a href="/" title="Homepage"> Home</a></li>
-          <li class="active">
-            <a href="/about.html" title="About Deborah"> About</a>
-          </li>
-          <li><a href="/project.html" title="Project Samples"> Projects</a></li>
-          <li><a href="/contact.html" title="Contact Deborah"> Contact</a></li>
-        </ul>
+    <header>
+      <nav class="fixed-top">
+        <div class="logo">Deborah Soetan</div>
+        <input type="checkbox" id="sidebar-active" />
+        <label for="sidebar-active" class="open-sidebar-button"
+          ><i class="fa-solid fa-bars"></i
+        ></label>
+        <label for="sidebar-active" id="overlay"></label>
+        <div class="links-container">
+          <label for="sidebar-active" class="close-sidebar-button">
+            <i class="fa-solid fa-xmark"></i>
+          </label>
+
+          <a href="/" title="Homepage"> Home</a>
+          <a href="/about.html" title="About Deborah"> About</a>
+
+          <a href="/project.html" title="Project Samples"> Projects</a>
+
+          <a href="/contact.html" title="Contact Deborah"> Contact</a>
+        </div>
       </nav>
-    </div>
+    </header>
     <div class="content-container container">
       <div class="row mb-5">
         <div class="col-lg-6">

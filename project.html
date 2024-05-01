@@ -35,22 +35,34 @@
     ></script>
   </head>
   <body>
-    <nav class="d-flex justify-content-between navbar-expand-lg">
-      <label class="logo"> Deborah Soetan</label>
-      <ul>
-        <li><a href="/" title="Homepage"> Home</a></li>
-        <li><a href="/about.html" title="About Deborah"> About</a></li>
-        <li class="active">
+    <header>
+      <nav class="fixed-top">
+        <div class="logo">Deborah Soetan</div>
+        <input type="checkbox" id="sidebar-active" />
+        <label for="sidebar-active" class="open-sidebar-button"
+          ><i class="fa-solid fa-bars"></i
+        ></label>
+        <label for="sidebar-active" id="overlay"></label>
+        <div class="links-container">
+          <label for="sidebar-active" class="close-sidebar-button">
+            <i class="fa-solid fa-xmark"></i>
+          </label>
+
+          <a href="/" title="Homepage"> Home</a>
+          <a href="/about.html" title="About Deborah"> About</a>
+
           <a href="/project.html" title="Project Samples"> Projects</a>
-        </li>
-        <li><a href="/contact.html" title="Contact Deborah"> Contact</a></li>
-      </ul>
-    </nav>
+
+          <a href="/contact.html" title="Contact Deborah"> Contact</a>
+        </div>
+      </nav>
+    </header>
+
     <div class="content-container container">
       <div class="content">
         <h1 class="mb-5">Take a look at what I've been working on!</h1>
         <div class="row mb-5" id="social-media">
-          <div class="col d-none d-lg-block">
+          <div class="col">
             <img
               src="images/social-link.png"
               class="img-fluid"
@@ -59,8 +71,8 @@
           </div>
           <div class="col">
             <div class="project-description">
-              <h2 class="mb-5">Social Media Link Project</h2>
-              <p class="mb-5 text-muted">
+              <h2>Social Media Link Project</h2>
+              <p class="text-muted">
                 This page cotains the links to all my social media handles.
               </p>
               <div>
@@ -74,8 +86,8 @@
         <div class="row mb-5" id="weather">
           <div class="col">
             <div class="project-description">
-              <h2 class="mb-5">Weather App</h2>
-              <p class="mb-5 text-muted">
+              <h2>Weather App</h2>
+              <p class="text-muted">
                 Weather App is a page application that forecasts the weather of
                 any city in the world.
               </p>
@@ -86,7 +98,7 @@
               </div>
             </div>
           </div>
-          <div class="col d-none d-lg-block">
+          <div class="col">
             <img
               src="images/weather.png"
               class="img-fluid"
@@ -95,7 +107,7 @@
           </div>
         </div>
         <div class="row" id="receipe">
-          <div class="col d-none d-lg-block">
+          <div class="col">
             <img
               src="images/receipe.png"
               class="img-fluid"
@@ -104,8 +116,8 @@
           </div>
           <div class="col">
             <div class="project-description">
-              <h2 class="mb-5">Receipe Page</h2>
-              <p class="mb-5 text-muted">
+              <h2>Receipe Page</h2>
+              <p class="text-muted">
                 I re-created the frontend of this page because of it's beautiful
                 UI and also to improve my skill.
               </p>
