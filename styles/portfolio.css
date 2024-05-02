@@ -94,7 +94,7 @@ h4 {
 }
 
 .header {
-  padding: 120px 20px;
+  padding: 160px 20px;
 }
 
 .hero {
@@ -171,11 +171,15 @@ h4 {
 }
 
 .project-description {
-  padding: 80px 60px;
+  padding: 60px 20px;
+}
+
+.weather {
+  display: none;
 }
 
 .project-description h2 {
-  margin-bottom: 50px;
+  margin-bottom: 20px;
   font-size: 32px;
   line-height: 1.5;
   color: #000;
@@ -191,7 +195,7 @@ h4 {
   font-size: 18px;
   border-radius: 4px;
   padding: 12px 25px;
-  margin-top: 50px;
+  margin-top: 20px;
 }
 
 .skills .btn {
@@ -233,6 +237,10 @@ footer .social-links a {
     transition: 0.75s ease-out;
   }
 
+  .logo {
+    padding-left: 30px;
+  }
+
   nav a {
     box-sizing: border-box;
     height: auto;
@@ -243,7 +251,7 @@ footer .social-links a {
 
   .open-sidebar-button,
   .close-sidebar-button {
-    padding: 20px;
+    padding: 20px 10px;
     display: block;
   }
 
@@ -275,6 +283,7 @@ footer .social-links a {
   .content-container {
     text-align: center;
     padding: 50px 10px;
+    margin-top: 30px;
   }
 
   .content-container h1 {
@@ -288,8 +297,8 @@ footer .social-links a {
   }
 
   .content-container p {
-    font-size: 12px;
-    line-height: 14px;
+    font-size: 14px;
+    line-height: 1.5;
   }
 
   .project-description {
@@ -325,7 +334,124 @@ footer .social-links a {
     margin-bottom: 30px;
   }
 
-  footer .email-link a {
-    font-size: 18px;
+  footer .contact {
+    position: fixed;
+  }
+}
+
+@media (max-width: 300px) {
+  .links-container {
+    flex-direction: column;
+    align-items: flex-start;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    z-index: 10;
+    height: 100%;
+    width: 200px;
+    background: var(--primary-color);
+    box-shadow: -5px 0 5px rgba(0, 0, 0, 0.25);
+    transition: 0.75s ease-out;
+  }
+
+  .logo {
+    padding-left: 30px;
+  }
+
+  nav a {
+    box-sizing: border-box;
+    height: auto;
+    width: 100%;
+    padding: 20px 30px;
+    justify-content: flex-start;
+  }
+
+  .open-sidebar-button,
+  .close-sidebar-button {
+    padding: 10px 5px;
+    display: block;
+  }
+
+  #sidebar-active:checked ~ .links-container {
+    right: 0;
+  }
+
+  #sidebar-active:checked ~ #overlay {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 9;
+  }
+
+  h1 {
+    font-size: 40px;
+  }
+
+  h2 {
+    font-size: 36px;
+  }
+
+  .hero {
+    padding: 20px 0;
+  }
+
+  .content-container {
+    text-align: center;
+    padding: 50px 10px;
+    margin-top: 30px;
+  }
+
+  .content-container h1 {
+    font-size: 36px;
+    line-height: 40px;
+  }
+
+  .content-container h2 {
+    font-size: 14px;
+    line-height: 15px;
+  }
+
+  .content-container p {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  .project-description {
+    font-size: 12px;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+  }
+
+  .project-description h2 {
+    margin-bottom: 20px;
+  }
+
+  .project-description p {
+    margin: 0;
+  }
+
+  .project-description .btn-branding-outline {
+    border: 1px solid var(--branding-color);
+    color: var(--branding-color);
+    font-size: 12px;
+    border-radius: 4px;
+    padding: 8px 18px;
+    margin-top: 20px;
+  }
+
+  .row {
+    display: block;
+    justify-content: center;
+  }
+
+  .col {
+    margin-bottom: 30px;
+  }
+
+  footer .contact {
+    position: fixed;
   }
 }
